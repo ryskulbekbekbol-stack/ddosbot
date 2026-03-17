@@ -14,11 +14,14 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-from telegram import Update, ParseMode, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.constants import ParseMode
 from telegram.ext import (
     Updater, CommandHandler, CallbackQueryHandler,
     MessageHandler, Filters, CallbackContext
 )
+
+# ... остальной код без изменений
 
 # ===== НАСТРОЙКИ ИЗ ПЕРЕМЕННЫХ ОКРУЖЕНИЯ =====
 BOT_TOKEN = os.getenv("BOT_TOKEN")
